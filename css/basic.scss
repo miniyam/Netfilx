@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+$gradient : linear-gradient(30deg, rgb(255, 10, 10),rgb(129, 0, 0));
+
+
+body {
+  font-family: 'Pretendard-Regular';
+  background:black;
+  
+}
+
+button { background: transparent; cursor: pointer; }
+
+
+section{ 
+  max-width : 600px;
+  min-width : 330px;
+  margin: 5px;
+
+  background: rgba(255, 255, 255, 0.966);
+  border-radius: 16px;
+  
+  .warp{ 
+    //border:0.5px solid rgba(34, 34, 34, 0.8);
+    border-radius: 16px;
+    box-shadow: 2px -4px 6px rgba(189, 48, 48, 0.8);}
+
+  header { 
+    height:48px; line-height:48px;
+    text-align: center;
+    background: $gradient;
+    border-radius: 16px 16px 0 0; 
+    font-size:18px;
+    color:rgba(230, 230, 230, 0.9);
+
+    .movie{
+      width:100%;
+      height:100%;
+      //background: black;
+    }
+     
+    .middle{
+      height:48px; line-height:48px;
+      text-align: center;
+      background: $gradient;
+      border:2px solid red;
+      font-size:40;
+      color:white;
+  
+    }
+
+
+
+  }
+
+  iframe {
+    display:inline-block;
+    width:100%;
+    height:340px;
+  
+    }
+
+  footer { 
+    background: $gradient;
+    border-radius:0 0 16px 16px;
+    text-align:center;
+
+    .footer_input{
+      width:100%;
+      height:40px; 
+      padding:0 32px;
+      border:0;
+      outline:0;
+     }
+     .footer_addBtn{
+      width:48px;
+      height:48px;
+      font-size:28px;
+      color:rgba(255, 255, 255, 0.562);
+      transition: 0.3s ease-in;
+
+       &:hover{color:white;
+        transform: scale(1.1);
+       }
+      }
+     }
+    }
+
+
+
+  ul.items{
+    height: 300px;
+    overflow-y: auto;
+    padding-bottom: 35px;
+
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding:6px 32px;
+      
+
+      .item_delBtn{
+        font-size: 16px;
+        color:rgb(177, 176, 176);
+        transition: 0.3s ease-in;
+
+        &:hover { 
+        color:rgb(255, 0, 0);
+        transform: scale(1.1);
+        }
+      }
+    }
+    .item_div{
+      width:90%;
+      height:2px; 
+      background:#eee;
+      margin:auto;
+    }  
+  }
+
